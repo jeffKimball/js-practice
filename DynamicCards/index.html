@@ -8,29 +8,31 @@
   </head>
   <body>
     <h1>Dynamic Cards</h1>
-    <main class="container">
-      <div class="card">
-        <div class="card-img-wrapper">
-          <img src="images/info-icon.png" alt="info-icon">
-        </div>
-        <span class="card-title">info-icon</span>
-        <button class="card-view-btn" data-id="info-icon">Learn More</button>
-      </div>
-      <div class="card">
-        <div class="card-img-wrapper">
-          <img src="images/info-icon.png" alt="info-icon">
-        </div>
-        <span class="card-title">info-icon</span>
-        <button class="card-view-btn" data-id="info-icon">Learn More</button>
-      </div>
-      <div class="card">
-        <div class="card-img-wrapper">
-          <img src="images/info-icon.png" alt="info-icon">
-        </div>
-        <span class="card-title">info-icon</span>
-        <button class="card-view-btn" data-id="info-icon">Learn More</button>
-      </div>
+    <main class="container">      
+      <!-- dynamic cards appended here -->
     </main>
+
+    <div id="overlay" class="hidden"></div>
+
+    <div class="popup hidden" >
+      <div class="close-btn">&#10006;</div>
+      <section class="left-popup-section">
+        <img src="images/info-icon.png" alt="">
+        <span>info-icon</span>
+      </section>
+      <section class="right-popup-section">
+        <p>When users click or hover over an info icon, it usually triggers a tooltip or a pop-up window that displays helpful information, explanations, instructions, or context about a particular element, feature, or topic within the interface. Info icons are commonly employed to enhance user understanding and facilitate a more user-friendly and informative experience.</p>
+      </section>
+    </div>
   </body>
   <script src="main.js"></script>
 </html>
+
+
+<!-- <div class="card">
+  <div class="card-img-wrapper">
+    <img src="images/info-icon.png" alt="info-icon">
+  </div>
+  <span class="card-title">info-icon</span>
+  <button class="card-view-btn" data-id="info-icon">Learn More</button>
+</div> -->
