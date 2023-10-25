@@ -1,0 +1,19 @@
+{
+    "icons":[
+        {
+            "title":"info-icon",
+            "path":"images/info-icon.png",
+            "description": "When users click or hover over an info icon, it usually triggers a tooltip or a pop-up window that displays helpful information, explanations, instructions, or context about a particular element, feature, or topic within the interface. Info icons are commonly employed to enhance user understanding and facilitate a more user-friendly and informative experience."
+        },
+        {
+            "title":"edit-icon",
+            "path":"images/edit-icon.png",
+            "description": "When users click or interact with an edit icon, it often opens an editing interface or dialog box, allowing them to make changes to text, images, forms, or other elements within the application or webpage. The edit icon is a widely recognized symbol for indicating the edit or customization functionality, making it easier for users to identify and access the option to edit content."
+        },
+        {
+            "title":"refresh-icon",
+            "path":"images/refresh-icon.png",
+            "description": "Users can click or tap on the refresh icon to trigger a refresh action, which reloads the current page or updates the displayed information from a data source. This icon is useful in scenarios where users want to ensure they have the latest data or need to resolve issues related to outdated or cached content. The refresh icon provides a straightforward way for users to initiate this process."
+        }
+    ]
+}
