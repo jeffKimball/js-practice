@@ -6,11 +6,11 @@ fetch('./icon.json')
     .then(data => {
         data.icons.forEach(icon => {
             // console.log(icon)
-            buildCard(icon)
+            cardBuilder(icon)
         })
     })
 
-function buildCard(data){
+function cardBuilder(data){
     // create the card div (parent)
     const card = document.createElement('div')
     card.className = 'card'
@@ -34,6 +34,7 @@ function buildCard(data){
     button.className = 'card-view-btn'
     button.setAttribute('data-id', data.title)
     button.innerText = 'Learn More'
+    button.addEventListener('click', ()=> triggerPopup(event))
 
     // append elements to card
     card.appendChild(cardImageWrapper)
@@ -43,6 +44,41 @@ function buildCard(data){
     MAIN_CONTAINER.appendChild(card)
 }
 
-const LEARN_MORE_BTNS = document.querySelectorAll('card-view-btn')
+// const LEARN_MORE_BTNS = document.querySelectorAll('card-view-btn')
 
-console.log(LEARN_MORE_BTNS)
+function triggerPopup(event){
+     
+    // console.log(event.target.getAttribute("data-id"))
+    let targetIcon = event.target.getAttribute("data-id")
+
+    fetch('./icon.json')
+    .then(response => response.json())
+    .then(data => {
+        // console.log(data.icons)
+        const popupData = data.icons.filter(icon  =>{
+            return icon.title === targetIcon
+        })
+        // console.log(popupData)
+        popupBuilder(popupData)
+    })    
+}
+
+function popupBuilder(data){
+    let title = document.getElementById('popup-title')
+    let image = document.getElementById('popup-img')
+    let description = document.getElementById('popup-description')
+
+    
+
+    title.innerText = data[0].title
+    image.src = data[0].path
+    description.innerText = data[0].description
+
+    document.querySelector('.popup').classList.remove('hidden')
+    document.querySelector('#overlay').classList.remove('hidden')
+}
+
+document.querySelector('.close-btn').addEventListener('click', () => {
+    document.querySelector('.popup').classList.add('hidden')
+    document.querySelector('#overlay').classList.add('hidden')
+})
