@@ -1,0 +1,2 @@
+Unless you have a tool to turn off CORS policy in your browser, you will need to run this project on something like Live Server in VSCode. 
+The reason for this is because the project must be ran over a web protocol due to the fetch API usage.
