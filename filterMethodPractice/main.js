@@ -117,7 +117,7 @@ const affordableCars = cars.filter(car => (car.year >= 2020) && (car.price < 300
 
 const filterByBrand = cars.filter(car => (car.model.includes('Toyota')) || (car.model.includes('Ford')))
 
-console.log(filterByBrand)
+// console.log(filterByBrand)
   
   
 // *******************************************************************************
@@ -135,45 +135,34 @@ let movies = [
     {title: "Forrest Gump", year: 1994, genres: ["Drama", "Romance"]},
   ];
 
-  // solution 1 (not so efficient)
-const recentSciFiMovies = movies.filter(film =>{
-  return film.year >= 2000 && film.genres.filter(genre =>{
-    return genre == 'Sci-Fi'
-  }).length > 0
-})
-// console.log(recentSciFiMovies)
-  
+// const sciFiMovies = movies.filter(movie =>  movie.year >= 2000)
 
+// console.log(sciFiMovies)
 
-// solution 2 (most efficient)
+const movieTitles = movies.filter(movie => movie.year >= 2000).map(movie => movie.title); //stretch goal - titles only
 
-function sciFiMoviesIn21stCentury(movies) {
-  return movies.filter(movie => movie.year >= 2000 && movie.genres.includes('Sci-Fi'))
-}
-// console.log(sciFiMoviesIn21stCentury(movies))
+// console.log(movieTitles)
 
 
 
 // *******************************************************************************
 // *******************************************************************************
 // Write a function that uses the filter() method to return a new array containing 
-// only restaurants that were opened in the 21st century (year 2000 and after) and 
-// offer "French" cuisine.
+// only the names of restaurants that were opened in the 21st century and offer
+// "French" cuisine.
 
 let restaurants = [
     {name: "Chez Panisse", year: 1971, cuisines: ["French", "Californian"]},
     {name: "Noma", year: 2003, cuisines: ["Nordic"]},
     {name: "Osteria Francescana", year: 1995, cuisines: ["Italian"]},
-    {name: "Eleven Madison Park", year: 1998, cuisines: ["American", "French"]},
+    {name: "Eleven Madison Park", year: 2008, cuisines: ["American", "French"]},
     {name: "Gaggan", year: 2010, cuisines: ["Indian", "Thai"]},
     {name: "El Celler de Can Roca", year: 1986, cuisines: ["Catalan"]},
 ]
 
-function frenchRestaurantsIn21stCentury(restaurants) {
-    return restaurants.filter(restaurant => restaurant.year >= 2000 && restaurant.cuisines.includes("French"))
-}
-
-// console.log(frenchRestaurantsIn21stCentury(restaurants))
+const post2000FrenchRestaurants = restaurants.filter(restaurant => (restaurant.year >= 2000) && (restaurant.cuisines.includes('French')))
+.map(restaurant => restaurant.name)
+console.log(post2000FrenchRestaurants)
 
 // *******************************************************************************
 // *******************************************************************************
