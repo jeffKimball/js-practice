@@ -160,9 +160,11 @@ let restaurants = [
     {name: "El Celler de Can Roca", year: 1986, cuisines: ["Catalan"]},
 ]
 
-const post2000FrenchRestaurants = restaurants.filter(restaurant => (restaurant.year >= 2000) && (restaurant.cuisines.includes('French')))
-.map(restaurant => restaurant.name)
-console.log(post2000FrenchRestaurants)
+const post2000FrenchRestaurants = restaurants.filter(restaurant => (restaurant.year > 2000)&&(restaurant.cuisines.includes('French'))).map(restaurant => restaurant.name)
+
+// console.log(post2000FrenchRestaurants)
+
+
 
 // *******************************************************************************
 // *******************************************************************************
@@ -177,15 +179,15 @@ let people2 = [
     {name: "George", favoriteFoods: ["Pizza", "Fish", "Salad"]},
 ]
   
-function pizzaLovers(people2){
-  return people2.filter(person =>{
-    return person.favoriteFoods.filter(food =>{
-      return food == 'Pizza'
-    }).length > 0
-  })
-}
+const pizzaLovers = people2.filter(person => (
+  person.favoriteFoods.filter(favs => favs === 'Pizza').length > 0
+))
 
-// console.log(pizzaLovers(people2))
+// const pizzaLovers = people2.filter(person => (
+//   person.favoriteFoods.includes('Pizza')
+// ))
+
+console.log(pizzaLovers)
   
 
 // *******************************************************************************
