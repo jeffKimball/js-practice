@@ -24,7 +24,15 @@ let library = [
         available: true}
   ];
 
-const availableBooks = library.filter(book => book.available === true)
+// more readable solution
+// function isAvailable(book){
+//   return book.available === true
+// }
+// const availableBooks = library.filter(isAvailable)
+
+// more succinct solution
+const availableBooks = library.filter(book => book.available)
+
 
 // console.log(availableBooks)
 
@@ -34,9 +42,18 @@ const availableBooks = library.filter(book => book.available === true)
 // Write a function that uses the filter() method to return a new array containing 
 // only even numbers from the original array.
 
-let numbers = [12, 5, 8, 130, 44, 27, 18, 99, 50, 64];
+let numbers = [12, 5, 8, 130, 44, 27, 18, 99, 50, 64]
 
-const evenNumbers = numbers.filter(num => num %2 === 0)
+// more readable solution
+// function isEven(num){
+//   return num%2 === 0
+// }
+// const evenNumbers = numbers.filter(isEven)
+
+
+// more succinct solution
+const evenNumbers = numbers.filter(num => num%2 === 0)
+
 
   // console.log(evenNumbers)
 
@@ -52,6 +69,14 @@ let people = [
       pets: [
         {name: "Fido", type: "Dog", age: 3},
         {name: "Fluffy", type: "Cat", age: 2}
+      ]
+    },
+    {
+      name: "Janet",
+      age: 20,
+      pets: [
+        {name: "Parro", type: "Dog", age: 1},
+        {name: "Jobo", type: "Cat", age: 1}
       ]
     },
     {
@@ -73,7 +98,15 @@ let people = [
     }
   ];
   
-const filterPeopleByPetAge = people.filter(person => person.pets.filter(pet =>  pet.age > 3).length > 0)
+// more readable solution
+// function hasPetsOlderThanThree(pets){
+//   return pets.filter(pet => pet.age > 3).length > 0;
+// }
+// const filterPeopleByPetAge = people.filter(person => hasPetsOlderThanThree(person.pets))
+
+// more succint solution
+const filterPeopleByPetAge = people.filter(petOwner => petOwner.pets.filter(pet => pet.age > 3).length > 0
+)
 
 // console.log(filterPeopleByPetAge)
 
@@ -187,7 +220,7 @@ const pizzaLovers = people2.filter(person => (
 //   person.favoriteFoods.includes('Pizza')
 // ))
 
-console.log(pizzaLovers)
+// console.log(pizzaLovers)
   
 
 // *******************************************************************************
