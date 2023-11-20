@@ -141,3 +141,146 @@
 // Input: "John Doe"
 // Output: ["John", "Doe"]
 //******************************************************************************************
+
+
+
+
+//******************************************************************************************
+// replaceAll() Method: Modifying Phrases in a String
+// Objective: Write a function that takes a string and two other strings, oldPhrase and newPhrase. 
+//The function should return a new string where all occurrences of oldPhrase are replaced with 
+//newPhrase using the replaceAll() method. Ensure the function is case-sensitive and does not alter 
+//any other part of the original string.
+
+// Details:
+// The function should accurately replace all instances of oldPhrase with newPhrase, maintaining 
+//the original string's structure and case sensitivity. Handle edge cases such as empty strings or 
+//non-string inputs gracefully.
+
+// Example:
+
+// Input: String - "The quick brown fox jumps over the lazy dog", oldPhrase - "fox", newPhrase - "cat"
+// Output: "The quick brown cat jumps over the lazy dog"
+//******************************************************************************************
+
+
+
+
+//******************************************************************************************
+// indexOf() Method: Finding the Position of a Substring
+// Objective: Write a function that takes two strings, mainString and searchString. The function 
+//should return the index of the first occurrence of searchString in mainString using the 
+//indexOf() method. If searchString is not found in mainString, the function should return -1.
+
+// Details:
+// The function should accurately find the position of the first occurrence of searchString in 
+//mainString. It should be case-sensitive. Consider edge cases such as empty strings or 
+//non-string inputs, and handle them appropriately.
+
+// Example:
+
+// Input: mainString - "Hello world, welcome to the universe.", searchString - "world"
+// Output: 6
+//******************************************************************************************
+
+
+
+
+//******************************************************************************************
+// search() Method: Locating a Pattern in a String
+// Objective: Write a function that takes two arguments, mainString and a regular expression 
+// pattern. The function should return the index of the first occurrence of a match for pattern 
+// within mainString using the search() method. If no match is found, the function should return -1.
+
+// Details:
+// Ensure that the function correctly utilizes regular expressions for searching within 
+// mainString. The search should be case-sensitive unless the regular expression specifies 
+// otherwise. Address edge cases such as non-string inputs or invalid regular expressions.
+
+// Example:
+
+// Input: mainString - "There is a calm before a storm", pattern - /storm/
+// Output: 27
+//******************************************************************************************
+
+
+
+
+//******************************************************************************************
+// charAt() Method: Accessing a Specific Character in a String
+// Objective: Write a function that takes a string and an integer index. The function should 
+// return the character at the specified index in the string using the charAt() method. If 
+// index is out of bounds (i.e., greater than or equal to the length of the string, or negative), 
+// the function should return an empty string.
+
+// Details:
+// The function should accurately return the character at the given index. It should handle 
+// edge cases, such as when index is a non-integer, negative, or out of the string's bounds. 
+// The function should not alter the original string.
+
+// Example:
+
+// Input: String - "Hello, World!", index - 7
+// Output: "W"
+//******************************************************************************************
+
+
+
+
+//******************************************************************************************
+// includes() Method: Checking for a Substring Within a String
+// Objective: Write a function that takes two strings, mainString and substring. The function 
+// should return a boolean value indicating whether mainString includes substring using the 
+// includes() method. The search should be case-sensitive.
+
+// Details:
+// The function should accurately determine whether substring is present in mainString. Handle 
+// edge cases, such as empty strings or non-string inputs, appropriately. The method should 
+// return true only if substring is found within mainString and false otherwise.
+
+// Example:
+
+// Input: mainString - "The quick brown fox jumps over the lazy dog", substring - "brown"
+// Output: true
+//******************************************************************************************
+
+
+
+
+//******************************************************************************************
+// lastIndexOf() Method: Finding the Last Occurrence of a Substring
+// Objective: Write a function that takes two strings, mainString and searchString. The 
+// function should return the index of the last occurrence of searchString in mainString using 
+// the lastIndexOf() method. If searchString is not found, the function should return -1.
+
+// Details:
+// The function should accurately find the position of the last occurrence of searchString in 
+// mainString. It should be case-sensitive. Handle edge cases such as empty strings or non-string 
+// inputs appropriately. The function should not alter the original string.
+
+// Example:
+
+// Input: mainString - "Fear leads to anger; anger leads to hate; hate leads to suffering.", searchString - "leads"
+// Output: 37
+//******************************************************************************************
+
+
+
+
+
+//******************************************************************************************
+// concat() Method: Combining Multiple Strings
+// Objective: Write a function that takes an array of strings and returns a single string 
+// made by concatenating all the strings in the array using the concat() method. The strings 
+// should be combined in the order they appear in the array.
+
+// Details:
+// The function should efficiently concatenate multiple strings from an array into one single 
+// string. Handle edge cases such as an empty array, arrays with non-string elements, or null 
+// values within the array. The function should not alter the original array or its contents.
+
+// Example:
+
+// Input: Array of Strings - ["Hello", " ", "World", "!"]
+// Output: "Hello World!"
+//******************************************************************************************
