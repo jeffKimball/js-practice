@@ -4,8 +4,7 @@
 // Given a string "Hello, world!", extract and log the word "Hello" using the slice() method.
 //*****************************************************************************************
 
-let str1 = "Hello World"
-console.log(str1.slice(0,5))
+
 
 
 //*****************************************************************************************
@@ -15,8 +14,7 @@ console.log(str1.slice(0,5))
 // "Developer". Use negative indices for this task.
 //*****************************************************************************************
 
-let str2 = "Frontend Developer"
-console.log(str2.slice(-9))
+
 
 
 //*****************************************************************************************
@@ -27,7 +25,8 @@ console.log(str2.slice(-9))
 // ending before the second number.
 //*****************************************************************************************
 
-console.log(str2.slice(9,12))
+
+
 
 
 //*****************************************************************************************
@@ -81,6 +80,8 @@ console.log(str2.slice(9,12))
 // The search string can be of any length.
 // If no strings match, return an empty array.
 
+// Hint: You should try using a filter method
+
 // Example:
 
 // Input: Array - ["apple", "banana", "apricot", "cherry", "mango"], Search String - "ap"
@@ -100,6 +101,8 @@ console.log(str2.slice(9,12))
 // The function should be case-sensitive.
 // The target ending string can be of any length.
 // If no strings match, the function should return an empty array.
+
+// Hint: You should try using a filter method
 
 // Example:
 
@@ -121,14 +124,23 @@ console.log(str2.slice(9,12))
 // Ensure that your function handles any edge cases, such as negative numbers or non-integer 
 // values for n. The function should not add a trailing dash at the end of the final repetition.
 
+// Hint:  My one-liner solution had 3 string methods chained together with repeat in the middle.
+
+
 // Example:
 
-// Input: String - "abc", n - 3
+// Input: String - "abc", n = 3
 // Output: "abc-abc-abc"
 //******************************************************************************************
 
+let str = "ABC"
 
+const repeaterFunc = (str, n) => { 
+    
+    return n <= 0 ? "" : str.concat('-').repeat(n).slice(0, -1)
+ }
 
+console.log(repeaterFunc(str, 3))
 
 //******************************************************************************************
 // split() method: Extracting First and Last Name to Array
