@@ -1,0 +1,3 @@
+This is an exercise on how to make webpages DRY by targeting elements 
+such as headers, menus, and footers, which show up on every page of the
+site, and converting them into reusable HTML components using JavaScript
