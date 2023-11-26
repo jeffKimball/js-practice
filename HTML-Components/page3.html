@@ -4,37 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="components/Header.js"></script>
+    <script src="main.js" defer></script>
     <title>Components</title>
 </head>
 <body>
-    <header class="container">
-        <div class="banner">
-             <section>
-                 <img src="images/logo.png" alt="John Cena">
-             </section>
-             <section>
-                 <h1>HTML Components Practice</h1>
-             </section>
-        </div>
-        <div class="menu">
-             <ul>
-                 <li>
-                     <a href="./index.html">
-                         Index
-                     </a></li>
-                 <li>
-                     <a href="./page2.html">
-                         Page 2
-                     </a>
-                 </li>
-                 <li>
-                     <a class="active"  href="./page3.html">
-                         Page 3
-                     </a>
-                 </li>
-             </ul>
-        </div>
-     </header>
+    <script>
+        document.body.prepend(createHeader('Page 3')); // Replace 'index' with the current page name
+    </script>
     <main class="container">
         <h2>Page 3</h2>
     </main>
@@ -56,5 +33,4 @@
     </footer>
     
 </body>
-    <script src="main.js"></script>
 </html>
