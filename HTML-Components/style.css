@@ -1,0 +1,153 @@
+/* ************************* */
+/* CSS Resets
+/* ************************* */
+
+/* Box sizing rules */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+/*
+2. Remove default margin
+*/
+* {
+    margin: 0;
+}
+/*
+3. Allow percentage-based heights in the application
+*/
+html, body {
+    min-height: 100%;
+    font-family: sans-serif;
+}
+
+/* ************************* */
+/* General Styles
+/* ************************* */
+
+.container{
+    width: 1400px;
+    margin: auto;
+}
+
+/* ************************* */
+/* Header Styles
+/* ************************* */
+
+header{
+    height: 180px;
+}
+
+.banner {
+    height: 100%;
+    background-color: #26bde4;
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner section {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.banner img{
+    width: 150px;
+}
+
+.banner h1 {
+    color: #fff;
+}
+
+/*menu styles */
+
+.menu {
+    display: flex;
+    justify-content: end;
+    padding: 20px;
+}
+
+.menu ul {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.menu ul li {
+    list-style: none;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    font-size: 19px;
+    color: orangered;
+    font-weight: bold;
+    border: 3px solid #f5f5f5;
+    background-color: #f8f8f8;
+    padding: 5px 15px;
+    border-radius: 3px;
+}
+
+ul li a:hover{
+    /* background-color: #26bee43c; */
+    border: 3px solid #26bee43c;
+    /* color: #eee; */
+}
+
+.menu ul li a.active {
+    border: 3px solid #26bee43c;
+}
+/* ************************* */
+/* Main Styles
+/* ************************* */
+
+main {
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    font-size: 60px;
+    color: orangered;
+
+}
+/* ************************* */
+/* Footer Styles
+/* ************************* */
+
+.footer {
+    position: fixed;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    background-color: #26bde4;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer .footer-content {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+}
+
+.footer .footer-section h4 {
+    margin-bottom: 10px;
+}
+
+.footer .footer-section p,
+.footer .footer-section ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer .footer-bottom {
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
