@@ -61,3 +61,22 @@ function createHeader(activePage) {
 
 
 
+// The HTML representation of the return value of createHeader() function
+
+{/* <header class="container">
+    <div class="banner">
+        <section>
+            <img src="images/logo.png" alt="John Cena">
+        </section>
+        <section>
+            <h1>HTML Components Practice</h1>
+        </section>
+    </div>
+    <div class="menu">
+        <ul>
+            <li><a href="./index.html">Index</a></li>
+            <li><a href="./page2.html">Page 2</a></li>
+            <li><a href="./page3.html">Page 3</a></li>
+        </ul>
+    </div>
+</header> */}
