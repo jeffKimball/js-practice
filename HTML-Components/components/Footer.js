@@ -1,3 +1,19 @@
+/** createFooter()
+ * Creates and returns a footer element for a webpage. The footer is structured 
+ * as a container with two main sections.The first section, 'footer-content', 
+ * includes two subsections: 'About Us' and 'Contact Info'. 
+ * 
+ * 'About Us' contains a heading and a paragraph with descriptive text. 
+ * 
+ * 'Contact Info' includes a heading and two paragraphs for email and contact 
+ * 
+ * The second main section, 'footer-bottom', contains a paragraph with 
+ * copyright information.
+ * 
+ * An HTML representation is in the comments below the function
+ *  
+ */
+
 function createFooter(){
     // create footer element
     const footer = document.createElement('footer')
@@ -65,7 +81,7 @@ function createFooter(){
     <div class="footer-content">
         <div class="footer-section">
             <h4>About Us</h4>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia ab autem<br> doloribus provident porro dolor dolorem eaque harum voluptatum debitis?</p>
+            <p>Lorem ipsum dolor, sit amet consecttur apisci<br>dolor dolorem eaque harum voluptatum</p>
         </div>
         <div class="footer-section">
             <h4>Contact Info</h4>
