@@ -5,24 +5,24 @@ function createFooter(){
 
     // create the div to hold top footer section content
     const footerContentDiv = document.createElement('div')
-    footerContentDiv.class = 'footer-content'
+    footerContentDiv.className = 'footer-content'
 
     // create top-left footer section
     const topLeftFooterSection = document.createElement('div')
-    topLeftFooterSection.class = 'footer-section'
+    topLeftFooterSection.className = 'footer-section'
     //create header
     const topLeftHeader = document.createElement('h4')
     topLeftHeader.textContent = 'About Us'
     //create paragraph
     const topLeftParagragh = document.createElement('p')
-    topLeftParagragh.textContent = 'Lorem ipsum dolor, sit amet consecttur apiscipinvel elit <br> Officia ab autum dolorboris provident porro dolorum'
+    topLeftParagragh.innerHTML = 'Lorem ipsum dolor, sit amet consecttur apisci<br>dolor dolorem eaque harum voluptatum'
     // append elements
     topLeftFooterSection.appendChild(topLeftHeader)
     topLeftFooterSection.appendChild(topLeftParagragh)
 
     // create top-right footer section
     const topRightFooterSection = document.createElement('div')
-    topRightFooterSection.class = 'footer-section'
+    topRightFooterSection.className = 'footer-section'
     //create header
     const topRightHeader = document.createElement('h4')
     topRightHeader.textContent = 'Contact Info'
@@ -36,4 +36,44 @@ function createFooter(){
     topRightFooterSection.appendChild(topRightHeader)
     topRightFooterSection.appendChild(topRightParagragh_1)
     topRightFooterSection.appendChild(topRightParagragh_2)
+
+    // append footer section elements to parent
+    footerContentDiv.appendChild(topLeftFooterSection)
+    footerContentDiv.appendChild(topRightFooterSection)
+
+    // create bottom section of footer
+    const footerBottomDiv = document.createElement('div')
+    footerBottomDiv.className = 'footer-bottom'
+
+    const footerBottomParagragh = document.createElement('p')
+    footerBottomParagragh.textContent = '© HTML Components Practice | All rights reserved'
+
+    // append paragragh to parent
+    footerBottomDiv.appendChild(footerBottomParagragh)
+
+    //append top content and bottome content to <footer>
+    footer.appendChild(footerContentDiv)
+    footer.appendChild(footerBottomDiv)
+
+    return footer
 }
+
+
+// The HTML representation of the return value of createFooter() function
+
+{/* <footer class="footer container">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h4>About Us</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia ab autem<br> doloribus provident porro dolor dolorem eaque harum voluptatum debitis?</p>
+        </div>
+        <div class="footer-section">
+            <h4>Contact Info</h4>
+            <p>Email: info@example.com</p>
+            <p>Phone: +123 456 7890</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2023 HTML Components Practice | All rights reserved</p>
+    </div>
+</footer>  */}
