@@ -6,7 +6,6 @@
 
 
 
-
 //*****************************************************************************************
 // slice() method: Negative Indices
 // Task: 
@@ -110,8 +109,12 @@
 // Output: ["world", "old", "bold"]
 //*****************************************************************************************
 
+const wordList = ["hello", "world", "coding", "old", "bold"]
+
+const filterByEndOfWord = (arr, searchStr) =>  arr.filter(arrItem => arrItem.toLowerCase().endsWith(searchStr.toLowerCase()))
 
 
+console.log(filterByEndOfWord(wordList, 'ld'))
 
 //******************************************************************************************
 // repeat() method: Creating a Patterned String
@@ -133,14 +136,14 @@
 // Output: "abc-abc-abc"
 //******************************************************************************************
 
-let str = "ABC"
+// let str = "ABC"
 
-const repeaterFunc = (str, n) => { 
+// const repeaterFunc = (str, n) => { 
     
-    return n <= 0 ? "" : str.concat('-').repeat(n).slice(0, -1)
- }
+//     return n <= 0 ? "" : str.concat('-').repeat(n).slice(0, -1)
+//  }
 
-console.log(repeaterFunc(str, 3))
+// console.log(repeaterFunc(str, 3))
 
 //******************************************************************************************
 // split() method: Extracting First and Last Name to Array
