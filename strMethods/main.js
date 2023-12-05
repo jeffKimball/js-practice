@@ -4,7 +4,8 @@
 // Given a string "Hello, world!", extract and log the word "Hello" using the slice() method.
 //*****************************************************************************************
 
-
+let str1 = "Hello World"
+console.log(str1.slice(0,5))
 
 
 //*****************************************************************************************
