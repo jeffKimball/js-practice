@@ -1,3 +1,25 @@
+/** createHeader(activePage)
+ * Creates and returns a header element for a webpage. This header is divided 
+ * into two primary sections: a banner and a menu.
+ * 
+ * The banner section includes an image (logo) and a main heading.
+ * 
+ * The menu section is a list of nav items, representing different pages. These 
+ * items are dynamically created based on a predefined array of page names and 
+ * their corresponding URLs.
+ * 
+ * The function accepts 'activePage' as a parameter, which is used to highlight 
+ * the current active page in the navigation menu by adding a class to the 
+ * respective menu item.
+ * 
+ * This function facilitates the dynamic generation of a consistent header across 
+ * different pages, with the active page highlighted appropriately.
+ * 
+ * An HTML representation is in the comments below the function
+ * 
+ */
+
+// activePage arg is the name of the calling page
 function createHeader(activePage) {
     // Create header element
     const header = document.createElement('header');
@@ -61,3 +83,22 @@ function createHeader(activePage) {
 
 
 
+// The HTML representation of the return value of createHeader() function
+
+{/* <header class="container">
+    <div class="banner">
+        <section>
+            <img src="images/logo.png" alt="John Cena">
+        </section>
+        <section>
+            <h1>HTML Components Practice</h1>
+        </section>
+    </div>
+    <div class="menu">
+        <ul>
+            <li><a href="./index.html">Index</a></li>
+            <li><a href="./page2.html">Page 2</a></li>
+            <li><a href="./page3.html">Page 3</a></li>
+        </ul>
+    </div>
+</header> */}
